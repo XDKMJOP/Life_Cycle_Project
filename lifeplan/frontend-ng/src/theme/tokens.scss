@@ -1,0 +1,29 @@
+:root {
+  --bg-deep: #0f1f18;
+  --bg-mid: #1c3a2c;
+  --bg-glow: #3d6b4f;
+  --sage: #a8c3a0;
+  --sage-strong: #c9dcb8;
+  --on-sage: #12261b;
+  --text: #eaf1e4;
+  --text-muted: rgba(234, 241, 228, 0.66);
+  --glass-bg: rgba(255, 255, 255, 0.08);
+  --glass-bg-strong: rgba(255, 255, 255, 0.14);
+  --glass-border: rgba(255, 255, 255, 0.16);
+  --glass-blur: 20px;
+  --radius-card: 24px;
+  --radius-control: 16px;
+  --radius-pill: 999px;
+  --danger: #e59a8f;
+  --success: #22c55e;
+  --completed-bg: linear-gradient(145deg, #14532d 0%, #0c331b 100%);
+  --completed-border: #22c55e;
+  --completed-text-tag: #86efac;
+  --completed-pill: #14532d;
+  --font-body: 'Noto Sans Thai', system-ui, sans-serif;
+  --font-display: 'Noto Serif Thai', serif;
+
+  --ion-background-color: var(--bg-deep);
+  --ion-text-color: var(--text);
+  --ion-font-family: var(--font-body);
+}

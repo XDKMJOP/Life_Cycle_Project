@@ -1,0 +1,55 @@
+# Dependencies
+node_modules/
+*/node_modules/
+*/*/node_modules/
+
+# Environment variables & secrets
+.env
+.env.*
+!.env.example
+*.env
+
+# Build outputs
+dist/
+build/
+bin/
+gen/
+out/
+.output/
+www/
+
+# Android build outputs & local config
+.gradle/
+*.apk
+*.aar
+*.aab
+local.properties
+.cxx/
+.externalNativeBuild/
+capacitor-cordova-android-plugins/
+app/src/main/assets/public/
+
+# Large media & binaries (>50MB / GitHub limits)
+*.mkv
+*.mp4
+*.avi
+*.mov
+.tools/
+*.exe
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS & Editor
+.DS_Store
+Thumbs.db
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

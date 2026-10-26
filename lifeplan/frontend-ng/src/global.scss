@@ -1,0 +1,81 @@
+/* Core CSS required for Ionic components to work properly */
+@import "@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "@ionic/angular/css/normalize.css";
+@import "@ionic/angular/css/structure.css";
+@import "@ionic/angular/css/typography.css";
+@import "@ionic/angular/css/display.css";
+
+/* Optional CSS utils */
+@import "@ionic/angular/css/padding.css";
+@import "@ionic/angular/css/float-elements.css";
+@import "@ionic/angular/css/text-alignment.css";
+@import "@ionic/angular/css/text-transformation.css";
+@import "@ionic/angular/css/flex-utils.css";
+
+/* Theme tokens and glassmorphism */
+@import "./theme/tokens.scss";
+@import "./theme/glass.scss";
+
+* {
+  box-sizing: border-box;
+}
+
+body, html, ion-app, ion-content {
+  font-family: var(--font-body);
+  color: var(--text);
+  background: var(--bg-deep);
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  min-height: 100vh;
+  background: radial-gradient(circle at 50% 15%, var(--bg-glow) 0%, var(--bg-mid) 40%, var(--bg-deep) 100%);
+  color: var(--text);
+  display: flex;
+  flex-direction: column;
+  padding: 16px 16px 80px;
+  max-width: 520px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.brand-header {
+  text-align: center;
+  padding: 16px 0 12px;
+}
+
+.brand-title {
+  font-family: var(--font-display);
+  font-size: 2.1rem;
+  font-weight: 700;
+  color: var(--sage-strong);
+  margin: 0;
+}
+
+/* Glass bottom tab bar */
+ion-tab-bar {
+  --background: rgba(15, 31, 24, 0.85);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  border-top: 1px solid var(--glass-border);
+  height: 58px;
+
+  ion-tab-button {
+    --color: var(--text-muted);
+    --color-selected: var(--sage-strong);
+    font-size: 11px;
+
+    ion-icon {
+      font-size: 20px;
+      margin-bottom: 2px;
+    }
+
+    ion-label {
+      font-size: 11px;
+      font-weight: 500;
+    }
+  }
+}
